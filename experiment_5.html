@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        input {
+            text-align: left;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 30px auto;
+
+        }
+
+        label {
+
+            display: block;
+            text-align: left;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center; ">STUDENT REGISTRATION FORM</h1>
+    <hr>
+
+    <form action="">
+        <label for="fname">
+            Full Name:
+        </label>
+        <input type="text" placeholder="Enter Your Full Name">
+        <label for="email">
+            Email ID:
+        </label>
+        <input type="email" placeholder="Enter Your Valid Email Id">
+        <label for="pass">
+            Password:
+        </label>
+        <input type="password" placeholder="Enter Password">
+        <label for="gender">
+            Gender:
+        </label>
+        <input type="checkbox">
+        Male
+        <input type="checkbox">
+        Female
+        <input type="checkbox">
+        Rather not say
+        <label for="course">
+            Course Taken:
+        </label>
+        <select id="course">
+            <option value="BTECH">
+                B-Tech CSE
+            </option>
+            <option value="ECE">
+                B-Tech CSE AIML
+            </option>
+            <option value="CSDS">
+                B-Tech ECE
+            </option>
+        </select>
+        <label for="number">
+            Contact Number:
+        </label>
+        <input type="number" placeholder="Enter phone number">
+        <label for="address">
+            Home Address:
+        </label>
+        <textarea id="address" placeholder="Enter your address"></textarea><br>
+        <input type="submit" value="Register">
+        <input type="submit" value="Clear">
+
+
+    </form>
+    <hr>
+    <footer>
+        ©2025 students registrations portal
+    </footer>
+</body>
+
+</html>

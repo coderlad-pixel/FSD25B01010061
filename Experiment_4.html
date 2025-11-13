@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<style>
+    h1 {
+        text-align: center;
+        padding: 20px 0;
+        margin: 0;
+        font-size: 50px;
+        text-transform: uppercase;
+    }
+
+    form {
+
+        max-width: 500px;
+        margin: 30px auto;
+
+
+
+    }
+
+    label {
+        display: block;
+        text-align: left;
+
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="number"],
+    select,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 14px;
+    }
+
+    textarea {
+        height: 80px;
+        resize: ertical;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        width: 48%;
+        padding: 10px;
+        font-size: 16px;
+
+        border-radius: 4px;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+</style>
+
+<title>
+    Hotel Booking Form
+</title>
+<h1>
+    Hotel Booking Form
+</h1>
+<form action="">
+    <label for="fullname">
+        Full Name :
+    </label>
+    <input type="text" id="fullname"><br />
+    <label for="email">
+        E-mail ID :
+    </label>
+    <input type="email" id="email"><br />
+    <label for="Phone">
+        Phone No. :
+    </label>
+    <input type="tel" id="Phone"><br />
+    <label for="checkindate">
+        Check-in Date :
+    </label>
+    <input type="date" id="checkindate"><br />
+    <label for="checkoutdate">
+        Check-out Date :
+    </label>
+    <input type="date" id="checkoutdate"><br />
+    <label for="roomtype">
+        Room Type :
+    </label>
+    <select id="roomtype">
+        <option value="singleroom">
+            Single Room
+        </option>
+        <option value="doubleroom">
+            Double Room
+        </option>
+        <option value="luxuryroom">
+            Luxury Room
+        </option>
+    </select><br>
+    <label for="noofguests">
+        Number Of Guests :
+    </label>
+    <input type="number" id="noofguests" min="1" max="5"><br />
+    <label for="specialrequests">
+        Special Requests (optional):
+    </label><br>
+    <textarea id="specialrequests"></textarea><br />
+    <input type="submit" value="Book Now">
+    <input type="submit" value="Reset Form">
+</form>
+
+</html>
